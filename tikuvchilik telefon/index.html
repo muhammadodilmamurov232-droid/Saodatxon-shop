@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👗 Saodatxon Tikuvchilik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>👗 Saodatxon Tikuvchilik</h1>
+    <p>Eng chiroyli liboslar shu yerda!</p>
+</header>
+
+<section class="products">
+    <!-- CARD 1 -->
+    <div class="card">
+        <img src="IMG_20260222_164505_077.jpg" alt="Ko'ylak" onclick="openModal(this.src)">
+        <h3>Qizil Ko'ylak</h3>
+        <p>Tur: Kechki libos</p>
+        <div class="like">
+            <span class="heart">🤍</span>
+            <span class="count">0</span>
+        </div>
+        <button class="order-btn" onclick="orderProduct('Qizil Ko\'ylak')">🛒 Buyurtma Qilish</button>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+        <img src="photo_2026-04-04_14-12-01.jpg" alt="Kostyum" onclick="openModal(this.src)">
+        <h3>Erkaklar Kostyumi</h3>
+        <p>Tur: Klassik</p>
+        <div class="like">
+            <span class="heart">🤍</span>
+            <span class="count">0</span>
+        </div>
+        <button class="order-btn" onclick="orderProduct('Erkaklar Kostyumi')">🛒 Buyurtma Qilish</button>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+        <img src="photo_2026-04-04_14-12-05.jpg" alt="Bolalar kiyimi" onclick="openModal(this.src)">
+        <h3>Bolalar Libosi</h3>
+        <p>Tur: Bayramona</p>
+        <div class="like">
+            <span class="heart">🤍</span>
+            <span class="count">0</span>
+        </div>
+        <button class="order-btn" onclick="orderProduct('Bolalar Libosi')">🛒 Buyurtma Qilish</button>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card">
+        <img src="photo_2026-04-04_14-12-05.jpg" alt="Ayollar kiyimi" onclick="openModal(this.src)">
+        <h3>Yozgi Ko'ylak</h3>
+        <p>Tur: Kundalik</p>
+        <div class="like">
+            <span class="heart">🤍</span>
+            <span class="count">0</span>
+        </div>
+        <button class="order-btn" onclick="orderProduct('Yozgi Ko\'ylak')">🛒 Buyurtma Qilish</button>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="card">
+        <img src="IMG_20260126_214954_213.jpg" alt="Ko'ylak" onclick="openModal(this.src)">
+        <h3>Rang Ko'ylak</h3>
+        <p>Tur: Kechki libos</p>
+        <div class="like">
+            <span class="heart">🤍</span>
+            <span class="count">0</span>
+        </div>
+        <button class="order-btn" onclick="orderProduct('Rang Ko\'ylak')">🛒 Buyurtma Qilish</button>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="card">
+        <img src="IMG_20260314_101721_470.jpg" alt="Kostyum" onclick="openModal(this.src)">
+        <h3>Klassik Kostyum</h3>
+        <p>Tur: Klassik</p>
+        <div class="like">
+            <span class="heart">🤍</span>
+            <span class="count">0</span>
+        </div>
+        <button class="order-btn" onclick="orderProduct('Klassik Kostyum')">🛒 Buyurtma Qilish</button>
+    </div>
+
+    <!-- CARD 7 -->
+    <div class="card">
+        <img src="IMG_20260129_142722_619.jpg" alt="Bolalar kiyimi" onclick="openModal(this.src)">
+        <h3>Bayramona Libosi</h3>
+        <p>Tur: Bayramona</p>
+        <div class="like">
+            <span class="heart">🤍</span>
+            <span class="count">0</span>
+        </div>
+        <button class="order-btn" onclick="orderProduct('Bayramona Libosi')">🛒 Buyurtma Qilish</button>
+    </div>
+
+    <!-- CARD 8 -->
+    <div class="card">
+        <img src="IMG_20260212_064847_141.jpg" alt="Yozgi libos" onclick="openModal(this.src)">
+        <h3>Yozgi Shabadoz</h3>
+        <p>Tur: Kundalik</p>
+        <div class="like">
+            <span class="heart">🤍</span>
+            <span class="count">0</span>
+        </div>
+        <button class="order-btn" onclick="orderProduct('Yozgi Shabadoz')">🛒 Buyurtma Qilish</button>
+    </div>
+</section>
+<!-- 
+<footer class="footer">
+    <h2>Biz bilan bog'laning</h2>
+    <div class="socials">
+        <a href="https://t.me/odiliy__0518" target="_blank" class="tg">📲 Telegram</a>
+        <a href="https://instagram.com/odiliy__0518" target="_blank" class="insta">📸 Instagram</a>
+    </div>
+</footer> -->
+<footer class="footer">
+    <h2>Biz bilan bog'laning</h2>
+    <div class="socials">
+        <a href="https://t.me/odiliy__0518" target="_blank" class="tg">📲 Telegram</a>
+        <a href="https://instagram.com/odiliy__0518" target="_blank" class="insta">📸 Instagram</a>
+    </div>
+    
+    <!-- ADMIN LINKINI QO'SHING -->
+    <hr style="margin: 20px 0; border: none; border-top: 1px solid rgba(255,255,255,0.3);">
+    <p style="margin-top: 20px;">
+        <a href="admin.html" style="color: white; text-decoration: none; font-weight: bold; background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 20px; display: inline-block; transition: 0.3s;">
+            👨‍💼 Admin Kabinet
+        </a>
+    </p>
+</footer>
+
+<footer>
+    <p>© 2026 Tikuvchilik Do'koni</p>
+</footer>
+
+<!-- Modal -->
+<div id="modal" class="modal" onclick="closeModal()">
+    <img id="modalImg">
+</div>
+
+<!-- Order Modal -->
+<div id="orderModal" class="modal" onclick="closeOrderModal()">
+    <div class="order-form" onclick="event.stopPropagation()">
+        <h2>Buyurtma Berish</h2>
+        <p id="productName"></p>
+        <input type="text" id="userName" placeholder="Ismingiz" required>
+        <input type="tel" id="userPhone" placeholder="Telefon raqamingiz" required>
+        <textarea id="userNote" placeholder="Izoh (ixtiyoriy)"></textarea>
+        <button onclick="submitOrder()" class="submit-btn">Yuborish</button>
+        <button onclick="closeOrderModal()" class="cancel-btn">Bekor Qilish</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
